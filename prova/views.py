@@ -28,11 +28,8 @@ def about():
 
     return render_template('teste.html', context=context)
 
-
-# views.py
-
-@app.route('/', methods=['GET'])  # <--- Adicione isto!
-def index():
+@app.route('/bem_vindo', methods=['GET'])
+def bem_vindo():
     context = {
         'usuarios': 'usuarios',
     }
